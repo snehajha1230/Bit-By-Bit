@@ -82,10 +82,10 @@
   margin-top: 2px;
 }
 
-/* Inbox Popup */
+/* Inbox Popup - Modified */
 .inbox-popup {
-  position: absolute;
-  top: 60px;
+  position: fixed; /* Changed to fixed to overlap */
+  top: 80px;       
   right: 50px;
   background: white;
   color: black;
@@ -93,6 +93,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   width: 200px;
+  z-index: 999;     /* Ensures it overlaps the background */
 }
 
 .inbox-popup h3 {
@@ -203,6 +204,62 @@
   background: #e0e0e0;
 }
 
+/* Dashboard Section - Centered */
+.dashboard-section {
+  margin: 0 auto; /* Center the dashboard */
+  width: 80%;
+  text-align: center;
+}
+
+/* Gigs Section */
+.gigs-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.gigs-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.gigs-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gig-box {
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gig-box:hover {
+  transform: translateY(-5px);
+}
+
+.gig-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.gig-box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.gig-price {
+  font-size: 1.2rem;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
 /* Footer */
 .footer {
   background: #f5f5f5;
@@ -211,6 +268,8 @@
   margin-top: 20px;
   color: #333;
 }
+
+
 
 
 

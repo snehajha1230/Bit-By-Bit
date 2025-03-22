@@ -16,6 +16,12 @@ const Home = () => {
     { name: "May", work: 10, payment: 1800 },
   ];
 
+  const gigs = [
+    { title: "Web Developer", description: "Building responsive websites using React and Node.js.", price: "$500" },
+    { title: "Graphic Designer", description: "Creating modern and eye-catching logos.", price: "$300" },
+    { title: "Content Writer", description: "Writing SEO-friendly blog posts and articles.", price: "$200" },
+  ];
+
   return (
     <div>
       {/* Sidebar Toggle Button */}
@@ -50,7 +56,6 @@ const Home = () => {
           <li><Link to="/about">About</Link></li>
         </ul>
 
-        {/* Modified Inbox Section */}
         <div className="auth-buttons">
           <Link to="/login" className="login-btn">Login</Link>
           <Link to="/signup" className="signup-btn">Sign Up</Link>
@@ -65,7 +70,7 @@ const Home = () => {
 
       {/* Inbox Popup */}
       {isInboxOpen && (
-        <div className="inbox-popup">
+        <div className="inbox-popup inbox-overlap">
           <h3>Messages</h3>
           <p>No new messages</p>
         </div>
@@ -78,24 +83,22 @@ const Home = () => {
         <Link to="/signup" className="cta-button">Get Started</Link>
       </header>
 
-      {/* Features Section */}
-      <section className="features">
-        <div className="feature-box">
-          <h3>Find Freelance Gigs</h3>
-          <p>Connect with clients and get hired for projects that match your skills.</p>
-        </div>
-        <div className="feature-box">
-          <h3>Enhance Your Skills</h3>
-          <p>Access top-notch learning resources to level up your career.</p>
-        </div>
-        <div className="feature-box">
-          <h3>Secure Your Dream Job</h3>
-          <p>Build your resume and apply for the best job opportunities.</p>
+      {/* Gigs Section */}
+      <section className="gigs-section">
+        <h2>Freelancer Gigs</h2>
+        <div className="gigs-container">
+          {gigs.map((gig, index) => (
+            <div key={index} className="gig-box">
+              <h3>{gig.title}</h3>
+              <p>{gig.description}</p>
+              <p className="gig-price">{gig.price}</p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* Dashboard Section */}
-      <section className="dashboard-section">
+      {/* Dashboard Section - Centered */}
+      <section className="dashboard-section centered">
         <h2>Dashboard Overview</h2>
         <ResponsiveContainer width="100%" height={300}>
           <LineChart data={data}>
@@ -119,3 +122,5 @@ const Home = () => {
 };
 
 export default Home;
+
+
