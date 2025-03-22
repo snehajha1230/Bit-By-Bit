@@ -26,7 +26,7 @@ This project is a **React-based web application** designed for skill matching an
 
 ### 🛠️ **Clone the Repository**
 ```bash
-git clone https://github.com/your-username/SkillSync.git
+git clone https://github.com/snehajha1230/SkillSync.git
 cd SkillSync
 
 
