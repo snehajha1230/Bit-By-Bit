@@ -1,0 +1,50 @@
+/* WorkStatus.css */
+
+.work-status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f7fc;
+  padding: 20px;
+}
+
+.work-status-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.work-status-content {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.work-status-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.work-status-card h2 {
+  color: #007bff;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.work-status-card p {
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
+
+.work-status-card strong {
+  color: #2c3e50;
+}

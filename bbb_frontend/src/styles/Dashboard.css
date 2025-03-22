@@ -1,0 +1,48 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.dashboard-section {
+  width: 80%;
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.payment-status p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.deadlines ul {
+  list-style: none;
+  padding: 0;
+}
+
+.deadlines li {
+  font-size: 1rem;
+  padding: 5px 0;
+  color: #444;
+}
